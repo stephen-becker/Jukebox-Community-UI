@@ -8,7 +8,7 @@ def GetTitleText(sectionNeeded):
     elif sectionNeeded == 2:
         return colored('Google Drive Connector:', 'red')
     elif sectionNeeded == 3:
-        return colored('Notebook Compatibility:', 'gold')
+        return colored('Notebook Compatibility:', 'yellow')
 
 def CheckNotebook(gpuRAM):
 
