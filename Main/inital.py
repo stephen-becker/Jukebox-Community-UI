@@ -12,9 +12,13 @@ def GetTitleText(sectionNeeded):
 
 def CheckNotebook(gpuRAM):
 
-    if gpuRAM <= 15000:
+    numRAM = [str(int) for int in gpuRAM]
+    a_numRAM = numRAM
+    int_numRAM = int(numRAM)
+
+    if int_numRAM <= 15000:
         return colored('Limited RAM, consider using 1b_lyrics!', 'red')
-    elif gpuRAM > 15000:
+    elif int_numRAM > 15000:
         return colored('With current RAM, most/all models should work fine.', 'green')
     else:
         return colored('Could not evaluate.', 'red')
